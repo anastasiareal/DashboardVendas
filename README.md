@@ -1,19 +1,74 @@
-# DashboardVendas
 
-O projeto se trata de uma dashboard focado no monitoramento e análise de assinaturas do serviço Xbox Game Pass. A seguir, um resumo do que o projeto inclui:
 
-**Dados sobre Assinaturas**:
-   - A base de dados contém informações como planos dos assinantes (Ultimate, Standard, Core), datas de início, preços, e benefícios adicionais como passes de temporada (EA Play e Minecraft).
-   - Existe detalhamento sobre renovação automática e aplicação de cupons, o que contribui para cálculos personalizados de valores finais.
+**ESTRUTURA DO PROJETO**
 
-**Tipos de Assinatura**:
-   - Os planos são divididos entre mensal, trimestral, e anual, com análises específicas sobre o desempenho de cada tipo.
+O projeto é baseado em um conjunto de dados que inclui as seguintes colunas principais:
+Subscriber ID: Identificador único do assinante.
 
-**Análises Quantitativas**:
-   - Uma tabela dinâmica realiza somatórios importantes, como o total arrecadado por tipo de assinatura e as vendas de passes de temporada.
-   - Exemplo: assinaturas trimestrais geraram R$2.308, com destaque para R$990 apenas no EA Play.
+Name: Nome do assinante.
 
-**Dashboard**:
-   - O título "Xbox Game Pass Subscription Sales" indica que o foco está na visualização clara dos dados de vendas.
-   - Possivelmente há gráficos ou métricas no dashboard para facilitar tomadas de decisão.
+Plan: Tipo de plano (Core, Standard, Ultimate).
+
+Start Date: Data de início da assinatura.
+
+Auto Renewal: Indica se a renovação automática está ativa (Yes/No).
+
+Subscription Price: Preço base da assinatura.
+
+Subscription Type: Periodicidade da assinatura (Monthly, Quarterly, Annual).
+
+EA Play Season Pass: Indica se o passe EA Play está incluído (Yes/No).
+
+EA Play Season Pass Price: Preço do passe EA Play, quando aplicável.
+
+Minecraft Season Pass: Indica se o passe Minecraft está incluído (Yes/No).
+
+Minecraft Season Pass Price: Preço do passe Minecraft, quando aplicável.
+
+Coupon Value: Valor do desconto aplicado.
+
+Total Value: Valor final pago pelo assinante.
+
+Resumo dos Dados
+Planos Disponíveis:
+Core: $5
+
+Standard: $10
+
+Ultimate: $15
+
+Passes de Temporada:
+EA Play: $30 (exclusivo para o plano Ultimate).
+
+Minecraft: $20 (disponível para Standard e Ultimate).
+
+Receita Total (Trimestral):
+Total Geral: $2.308
+
+Assinaturas com Renovação Automática: $1.502
+
+Assinaturas sem Renovação Automática: $806
+
+EA Play Season Pass (Trimestral):
+Total: $990 (somente no plano Ultimate).
+
+Minecraft Season Pass (Trimestral):
+Total: $1.140 (Standard: $480, Ultimate: $660).
+
+
+
+
+
+**OBJETIVOS**
+
+Análise de Receita: Avaliar o desempenho financeiro das assinaturas, incluindo o impacto de cupons de desconto e passes de temporada.
+
+Comportamento do Assinante: Identificar padrões de renovação automática e preferências por planos e tipos de assinatura.
+
+Visualização de Dados: Apresentar informações de forma clara e intuitiva por meio de gráficos e tabelas, utilizando ferramentas de visualização de dados.
+
+Otimização Estratégica: Fornecer insights para campanhas de marketing, ajustes de preços e promoções baseadas no comportamento dos usuários.
+
+
+
 
